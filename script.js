@@ -106,6 +106,16 @@ document.getElementById("next").addEventListener("click", () => {
   masterPlay.classList.add("fa-pause-circle");
 });
 
+// Theme switcher
+document.getElementById("theme-switcher").addEventListener("click", () => {
+  const themeStyle = document.getElementById("theme-style");
+  if (themeStyle.disabled) {
+    themeStyle.disabled = false;
+  } else {
+    themeStyle.disabled = true;
+  }
+});
+
 // Previous button functionality
 document.getElementById("previous").addEventListener("click", () => {
   if (songIndex <= 0) {
