@@ -36,7 +36,7 @@ nav {
 .flex-center {
     display: flex;
     align-items: center;
-    gap: 5 px;
+    gap: 5px;
     font-weight: 700;
     font-size: 25px;
 }
@@ -45,11 +45,11 @@ nav {
     margin: 10px auto;
     min-height: 73vh;
     width: 70%;
-    /* background-color: red; */
     border-radius: 14px;
     padding: 34px;
     background-image: url(assets/bg.jpg);
     background-position: left top;
+    background-size: cover;
 }
 
 .container h1 {
@@ -73,9 +73,10 @@ nav {
 }
 
 .icons {
-    /* color: #ffffff; */
     cursor: pointer;
     padding: 1px 10px;
+    display: flex;
+    gap: 20px;
 }
 
 .songItem {
@@ -109,4 +110,23 @@ nav {
     width: 50px;
     opacity: 0;
     transition: opacity .5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .songItem {
+        width: 100%;
+    }
+    
+    nav {
+        padding: 15px 20px;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
 }

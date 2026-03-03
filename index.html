@@ -1,87 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify - The Weekend</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li class="flex-center">
-            <img src="assets/logo.svg" alt="" />Spotify
-          </li>
-          <li><a href="#"></a>Home</li>
-          <li><a href="#"></a>About</li>
-        </ul>
-      </nav>
-    </header>
 
-    <div class="container">
-      <h1>The Weekend Frequencies</h1>
-      <div class="songList">
-        <div class="songItem">
-          <img alt="" />
-          <span class="songName">Hurt You</span>
-          <span class="SongListPlay"><span>04:20</span></span>
-          <i id="0" class="far fa-play-circle songItemPlay"></i>
-        </div>
-        <div class="songItem">
-          <img alt="" />
-          <span class="songName">Hurt You</span>
-          <span class="SongListPlay"><span>04:20</span></span>
-          <i id="1" class="far fa-play-circle songItemPlay"></i>
-        </div>
-        <div class="songItem">
-          <img alt="" />
-          <span class="songName">Hurt You</span>
-          <span class="SongListPlay"><span>04:20</span></span>
-          <i id="2" class="far fa-play-circle songItemPlay"></i>
-        </div>
-        <div class="songItem">
-          <img alt="" />
-          <span class="songName">Hurt You</span>
-          <span class="SongListPlay"><span>04:20</span></span>
-          <i id="3" class="far fa-play-circle songItemPlay"></i>
-        </div>
-        <div class="songItem">
-          <img alt="" />
-          <span class="songName">Hurt You</span>
-          <span class="SongListPlay"><span>04:20</span></span>
-          <i id="4" class="far fa-play-circle songItemPlay"></i>
-        </div>
-      </div>
-      <div class="songBanner"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - The Weekend</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://kit.fontawesome.com/0f223132b7.js" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="flex-center">
+          <img src="assets/logo.svg" alt="Spotify Logo" />
+          <span>Spotify</span>
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>The Weekend Frequencies</h1>
+    <div class="songList" id="songList"></div>
+    <div class="songBanner"></div>
+  </div>
+
+  <!-- player -->
+  <div class="bottom">
+    <input type="range" name="" id="myProgressBar" value="0" min="0" max="100" />
+    <div class="icons">
+      <i class="fas fa-3x fa-step-backward" id="previous"></i>
+      <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+      <i class="fas fa-3x fa-step-forward" id="next"></i>
     </div>
-
-    <!-- player -->
-    <div class="bottom">
-      <input
-        type="range"
-        name=""
-        id="myProgressBar"
-        value="0"
-        min="0"
-        max="100"
-      />
-      <div class="icons">
-        <i class="fas fa-3x fa-step-backward" id="previous"></i>
-        <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
-        <i class="fas fa-3x fa-step-forward" id="next"></i>
-      </div>
-      <div class="songInfo">
-        <img src="assets/abel.gif" alt="" id="gif" />
-        <p>Hurt You</p>
-      </div>
+    <div class="songInfo">
+      <img src="assets/abel.gif" alt="" id="gif" />
+      <p>Hurt You</p>
     </div>
+  </div>
 
-    <script
-      src="https://kit.fontawesome.com/0f223132b7.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/0f223132b7.js" crossorigin="anonymous" async></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
